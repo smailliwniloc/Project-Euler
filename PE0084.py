@@ -93,6 +93,8 @@ for _ in range(10000000):
         totalMoves += 1
         currPos += roll
         currPos %= 40
+    if(currPos == 30):
+        currPos = 10
     if(currPos in commChest):
         currPos = handleCommChest(currPos)
     if(currPos in chance):
